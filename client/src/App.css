@@ -1,7 +1,7 @@
 .App {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	font-weight: bold;
 	font-size: 40px;
 }
@@ -14,7 +14,27 @@
 
 .left-pane {
 	background-color: white;
-	border-right: 1px solid grey;
-  font-size: 20px;
-  font-weight: normal;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.right-pane {
+	height: fit-content;
+	min-height: 100vh;
+	border-left: 1px solid grey;
+}
+
+.right-pane-body {
+	font-size: 14px;
+	font-weight: normal;
+	margin-top: 100px;
+	overflow: scroll;
+	/* padding: 20px; */
+}
+
+.right-pane-fixed-header {
+	position: fixed;
+	height: fit-content;
+	background-color: white;
+	width: 100%;
 }
